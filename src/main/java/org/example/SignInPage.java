@@ -3,20 +3,22 @@ package org.example;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class SignInPage extends BasePage {
     public SignInPage(WebDriver webDriver) {
         super(webDriver);
     }
-    private By login = By.xpath("//div/input[@name='login-form[login]']");
-    private By password = By.xpath("//div//input[@name='login-form[password]']");
+    private By loginInput = By.xpath("//div/input[@name='login-form[login]']");
+    private By passwordInput = By.xpath("//div//input[@name='login-form[password]']");
     private By submitButton = By.xpath("//button[@type='submit']");
 
-public MainPage SignInSuccessful(){
-    webDriver.findElement(login).sendKeys("olga");
-    webDriver.findElement(password).sendKeys("Dimapovrez123");
+public MainPage SignInSuccessful(String login, String password){
+    webDriver.findElement(loginInput).sendKeys(login);
+    webDriver.findElement(passwordInput).sendKeys(password);
     WebElement button = webDriver.findElement(submitButton);
     button.submit();
+
     return new MainPage(webDriver);
 }
 }

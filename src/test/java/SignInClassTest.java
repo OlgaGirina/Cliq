@@ -8,23 +8,11 @@ import org.junit.*;
 
 import java.time.Duration;
 
-public class SignInClassTest {
+public class SignInClassTest extends TestBase {
 
-    WebDriver webDriver;
-    private SignInPage signInPage;
-    static WebDriverWait wait;
-    @Before
-    public void SetUp() {
-        WebDriverManager.chromedriver().setup();
-        webDriver = new ChromeDriver();
-        wait = new WebDriverWait(webDriver, Duration.ofSeconds(5));
-        webDriver.manage().window().maximize();
-        webDriver.get("http://short:short@cliq-backend-master.sb.cliqonline.com");
-        signInPage = new SignInPage(webDriver);
-    }
     @Test
     public void signInTest(){
-        MainPage mainpage = signInPage.SignInSuccessful();
+        MainPage mainpage = signInPage.SignInSuccessful("olga", "Dimapovrez123");
         String heading = mainpage.getText();
         Assert.assertEquals("CLIQ Admin", heading);
     }

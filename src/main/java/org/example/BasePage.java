@@ -15,4 +15,5 @@ public class BasePage  {
         wait = new WebDriverWait(webDriver, Duration.ofSeconds(15));
     }
 
+
 }
