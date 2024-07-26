@@ -5,6 +5,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertTrue;
+
 public class CreateSiteTest extends TestBase {
     @Before
     public void login() {
@@ -23,13 +25,13 @@ public class CreateSiteTest extends TestBase {
         Thread.sleep(5000);
         createSite.inputSiteIndustry("IMN Dating")
                 .selectSiteType()
-                .inputSiteName("NewMobileSiteTest23")
-                .inputDomainNew("testapp4")
-                .inputTrackDomainNew("testapp4")
-                .inputCdnDomainNew("testapp4")
+                .inputSiteName("NewMobileSiteTest")
+                .inputDomainNew("autoTest.cliq-track-master.sb.cliqonline.com")
+                .inputTrackDomainNew("autoTest.cliq-track-master.sb.cliqonline.com")
+                .inputCdnDomainNew("autoTest.cliq-track-master.sb.cliqonline.com")
                 .clickSaveButton();
-        Thread.sleep(3000);
-        Assert.assertTrue(createSite.checkResultPhrase());
+        Thread.sleep(5000);
+        assertTrue(createSite.checkResultPhrase());
         createSite.changeTab();
         Thread.sleep(3000);
         createSite.activateCheckboxEnabledPushNotifications()
@@ -37,13 +39,15 @@ public class CreateSiteTest extends TestBase {
                 .inputPushApplication("Joker Lucky Wheel")
                 .clickSaveButton();
         Thread.sleep(3000);
-        Assert.assertTrue(createSite.checkResultPhrase());
+        assertTrue(createSite.checkResultPhrase());
         Thread.sleep(3000);
         mainPage.chooseSiteForCreateFromMenu();
         Thread.sleep(3000);
-        mainPage.selectSiteName("NewMobileSiteTest23")
+        mainPage.selectSiteName("NewMobileSiteTest")
                 .clickSubmitButton();
-        Assert.assertTrue(mainPage.checkFinalResultCreateMobileAppSite());
+        assertTrue(mainPage.checkFinalResultCreateMobileAppSite());
+        Thread.sleep(3000);
+        mainPage.deleteCreatedSiteAndIndustry();
     }
 
     @After

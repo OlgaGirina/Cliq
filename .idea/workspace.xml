@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b46b2ad2-c443-4d07-9e59-ce8509513cf2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CreateIndustry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CreateSite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SchedulerPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CreateSiteTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MainPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SchedulerPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CreateIndustry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CreateIndustry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/SignInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SignInClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SignInClassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateSiteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateSiteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,23 +43,32 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "onboarding.tips.debug.path": "/Users/olgagirina/IdeaProjects/Cliq/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.tools"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/olgagirina/IdeaProjects/Cliq/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.SchedulerPageTest">
+    <configuration name="CreateSiteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cliq" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CreateSiteTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Cliq" />
       <option name="PACKAGE_NAME" value="" />
@@ -84,15 +82,6 @@
       <module name="Cliq" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SchedulerPageTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignInClassTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Cliq" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SignInClassTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,10 +140,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SchedulerPageTest" />
+        <item itemvalue="JUnit.CreateSiteTest" />
         <item itemvalue="JUnit.MainPageTest" />
         <item itemvalue="Maven.Cliq [allure:serve]" />
         <item itemvalue="Maven.Cliq [allure:report]" />
-        <item itemvalue="JUnit.SignInClassTest" />
       </list>
     </recent_temporary>
   </component>
@@ -183,5 +172,8 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Cliq$CreateSiteTest_createSiteTest.ic" NAME="CreateSiteTest.createSiteTest Coverage Results" MODIFIED="1721833317788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
