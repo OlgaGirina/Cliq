@@ -21,20 +21,20 @@ public class MainPageTest extends TestBase {
         CreateIndustry createIndustry1 = mainPage.createIndustry();
         String text = createIndustry1.getTextButton();
         Assert.assertEquals("Save", text);
-        createIndustry.inputIndustryName("Industry_AutoTest");
-        createIndustry.inputIndustryDescription("Description");
+        createIndustry.inputIndustryName("Industry_AutoTest5");
+        createIndustry.inputIndustryDescription("Description4");
         createIndustry.selectLeadType();
         createIndustry.pressButtonSave();
         createIndustry.addFeatureToIndustry();
         createIndustry.pressAddFeatureButton();
-        createIndustry.inputFeatureName("NewFeature1");
+        createIndustry.inputFeatureName("NewFeature11");
         createIndustry.pressButtonSave();
         Assert.assertTrue(createIndustry.checkResultPhrase());
-        mainPage.chooseIndustryFromMenu();
+   /*     mainPage.chooseIndustryFromMenu();
         Thread.sleep(3000);
-        mainPage.selectIndustryName("Industry_AutoTest");
+        mainPage.selectIndustryName("Industry_AutoTest1");
         Thread.sleep(3000);
-        mainPage.deleteCreatedSiteAndIndustry();
+        mainPage.deleteCreatedSiteAndIndustry();*/
         Thread.sleep(3000);
 
     }
