@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.junit.Assert.assertTrue;
 
-
 public class MainPageTest extends TestBase {
     @Before
     public void login() {
@@ -21,7 +20,7 @@ public class MainPageTest extends TestBase {
         CreateIndustry createIndustry1 = mainPage.createIndustry();
         String text = createIndustry1.getTextButton();
         Assert.assertEquals("Save", text);
-        createIndustry.inputIndustryName("Industry_AutoTest5");
+        createIndustry.inputIndustryName("Industry_AutoTest12mvn");
         createIndustry.inputIndustryDescription("Description4");
         createIndustry.selectLeadType();
         createIndustry.pressButtonSave();
